@@ -27,6 +27,13 @@ public class RomanNumeralApplet extends Applet implements ActionListener {
 	
 	
 	
+	public static void main(String[] args) {
+		RomanNumeralApplet app = new RomanNumeralApplet();
+		app.init();
+	}
+	
+	
+	
 	public void init() {
 		// Add text inputs, buttons, and text outputs into a grid pattern
 		setLayout(new GridLayout(2, 3));
