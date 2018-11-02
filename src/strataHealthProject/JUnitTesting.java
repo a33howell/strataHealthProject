@@ -8,6 +8,57 @@ public class JUnitTesting {
 	StandardNumeralConversion temp = new StandardNumeralConversion();
 
 	@Test
+	public void testFromNumeral1() {
+		assertEquals(2018, temp.fromRomanNumeral("MMXVIII"));
+		System.out.println();
+	}
+	
+	@Test
+	public void testFromNumeral2() {
+		assertEquals(333, temp.fromRomanNumeral("CCCXXXIII"));
+		System.out.println();
+	}
+	
+	@Test
+	public void testFromNumeral3() {
+		assertEquals(400, temp.fromRomanNumeral("CD"));
+		System.out.println();
+	}
+	
+	@Test
+	public void testFromNumeral4() {
+		assertEquals(1239, temp.fromRomanNumeral("MCCXXXIX"));
+		System.out.println();
+	}
+	
+	@Test
+	public void testFromNumeral5() {
+		assertEquals(10000, temp.fromRomanNumeral("MMMMMMMMMM"));
+		System.out.println();
+	}
+	
+	@Test
+	public void testFromNumeral6() {
+		assertEquals(1, temp.fromRomanNumeral("I"));
+		System.out.println();
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testFromNumeral7() {
+		temp.fromRomanNumeral("MMMZIII");
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testFromNumeral8() {
+		temp.fromRomanNumeral("MMMCCCMMMM");
+	}
+	
+	
+	
+	
+	
+	
+	@Test
 	public void testToNumeral1() {
 		assertEquals("MMXVIII", temp.toRomanNumeral(2018));
 	}
