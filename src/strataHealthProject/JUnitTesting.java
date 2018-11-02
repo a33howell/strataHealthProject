@@ -4,43 +4,48 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+/**
+ * JUnit test class containing tests for for StandardNumeralConversion class
+ * 
+ * @author	Andrew Howell
+ * @version	1.0
+ * @since	2018-11-01
+ */
 public class JUnitTesting {
 	StandardNumeralConversion temp = new StandardNumeralConversion();
 
+	/*
+	 * ----- fromRomanNumeral() tests -----
+	 */
+	
 	@Test
 	public void testFromNumeral1() {
 		assertEquals(2018, temp.fromRomanNumeral("MMXVIII"));
-		System.out.println();
 	}
 	
 	@Test
 	public void testFromNumeral2() {
 		assertEquals(333, temp.fromRomanNumeral("CCCXXXIII"));
-		System.out.println();
 	}
 	
 	@Test
 	public void testFromNumeral3() {
 		assertEquals(400, temp.fromRomanNumeral("CD"));
-		System.out.println();
 	}
 	
 	@Test
 	public void testFromNumeral4() {
 		assertEquals(1239, temp.fromRomanNumeral("MCCXXXIX"));
-		System.out.println();
 	}
 	
 	@Test
 	public void testFromNumeral5() {
 		assertEquals(10000, temp.fromRomanNumeral("MMMMMMMMMM"));
-		System.out.println();
 	}
 	
 	@Test
 	public void testFromNumeral6() {
 		assertEquals(1, temp.fromRomanNumeral("I"));
-		System.out.println();
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
@@ -57,6 +62,10 @@ public class JUnitTesting {
 	
 	
 	
+	
+	/*
+	 * ----- toRomanNumeral() tests -----
+	 */
 	
 	@Test
 	public void testToNumeral1() {
