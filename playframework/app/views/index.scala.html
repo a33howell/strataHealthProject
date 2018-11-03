@@ -1,0 +1,27 @@
+@(output1: String)(output2: String)
+
+@main("Roman numeral converter") {
+
+<html>
+<head>
+  <h1>ROMAN NUMERAL CONVERTER</h1>
+</head>
+<body>
+  <div id="converter">
+    <p></p>
+    <form action="@routes.HomeController.toRomanNumeral()" method="get">
+      <input type="text" name="intInput" placeholder="Enter an integer"/>
+      <button id="button1">convert to Roman numeral</button>
+      <p>RESULT -> @output1</p>
+    </form>
+
+    <form action="@routes.HomeController.fromRomanNumeral()" method="get">
+      <input type="text" name="numeralInput" placeholder="Enter a Roman numeral"/>
+      <button id="button2">convert to integer</button>
+      <p>RESULT -> @output2</p>
+    </form>
+  </div>
+</body>
+</html>
+
+}

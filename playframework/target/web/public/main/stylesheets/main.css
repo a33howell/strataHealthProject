@@ -1,0 +1,9 @@
+h1 {
+    color: grey;
+}
+
+.converter {
+    margin: auto;
+    float: right;
+    align: center;
+}

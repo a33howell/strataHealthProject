@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\Owner\Desktop\strataHealthProject\playframework\app\views\index.scala.html:13:25: not found: value myForm[0m
+[0m[[0m[31merror[0m] [0m[0m      @helper.inputText(myForm("email"))[0m
+[0m[[0m[31merror[0m] [0m[0m                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
